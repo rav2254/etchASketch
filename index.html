@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Etch-A-Sketch</h1>
+    <div class="sizeSelector">
+        <input type="range" id= 'pixelSelector' min="1" max="100" step="1" value="16"/>
+        <p id="rangeInfo">Move the slider to adjust number of pixels on the grid</p>
+        <p id="sizeDisplay">Your current size is 16 X 16</p>
+    </div>
+    <fieldset>
+        <legend>Mode</legend>
+        <div>
+            <input type="radio" id="normal" name="modeSelector" value="normal" checked/>
+            <label for="normal">Normal</label>
+
+            <input type="radio" id="random" name="modeSelector" value="random"/>
+            <label for="random">Random</label>
+
+            <input type="radio" id="fade" name="modeSelector" value="fade"/>
+            <label for="fade">Fade</label>
+        </div>
+        <button id="clear">clear</button>
+    </fieldset>
+    <div id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
