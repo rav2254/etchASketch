@@ -1,0 +1,54 @@
+#title{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+/* Slider and accompanying text */
+#pixelSelector{
+    display: flex;
+    margin: auto;
+    width: 80vmin;
+}
+
+#rangeInfo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#sizeDisplay{
+    display: flex;
+    justify-content: center;
+}
+
+/*mode selector and clear button*/
+fieldset{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80vmin;
+    margin: auto;
+}
+
+#clear{
+    border-radius: 6px;
+}
+
+/* Main grid display*/
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    aspect-ratio: 1/1;
+    width: 70vmin;
+    height: 70vmin;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+.pixel{
+    border: 0px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
