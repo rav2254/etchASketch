@@ -3,7 +3,9 @@ const sizeDisplay = document.querySelector('#sizeDisplay'); //div displaying the
 const gridSize = document.querySelector('#pixelSelector'); 
 const clearBtn = document.querySelector('#clear');
 const modeSelector = document.querySelectorAll('input[type=radio]')
+const colorSelector = document.querySelector('#colorSelector')
 let mode = 'normal' //default value
+let currentColor = colorSelector.value
 
 
 gridSize.addEventListener('input', () => { //listen for changes in size selector bar
@@ -38,12 +40,16 @@ clearBtn.addEventListener('click', e=>{ //go through all pixels and change BG to
     document.querySelectorAll('.pixel').forEach(elem => elem.style.backgroundColor ='white') 
 })
 
+colorSelector.addEventListener('input', ()=>{
+    currentColor = colorSelector.value
+})
+
 container.addEventListener('mouseover',(e) => {
     let selectedPixel = e.target
     if (selectedPixel.classList.contains('pixel')){
         switch (mode){
             case 'normal':
-                selectedPixel.style.backgroundColor = 'pink';
+                selectedPixel.style.backgroundColor = currentColor;
                 break;
             case 'random':
                 selectedPixel.style.backgroundColor = generateRandomColor();

@@ -18,6 +18,7 @@ Event Listeners-
 - mode selector - listens for changes in radio inputs and updates the mode variable 
 - clear btn- listens for button clicks and loop through all the pixels and changes bg-color to white
 - mouse over- listens for mouse entry on the pixel and updates it's bg-color based on the mode (normal or random or alert message for fade)
+- colorSelector- listens for changes in color and updates the current color variable
 
 
 Personal Comments-
