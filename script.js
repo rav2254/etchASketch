@@ -40,8 +40,8 @@ clearBtn.addEventListener('click', e=>{ //go through all pixels and change BG to
     document.querySelectorAll('.pixel').forEach(elem => elem.style.backgroundColor ='white') 
 })
 
-colorSelector.addEventListener('input', ()=>{
-    currentColor = colorSelector.value
+colorSelector.addEventListener('input', (e)=>{
+    currentColor = e.target.value
 })
 
 container.addEventListener('mouseover',(e) => {
